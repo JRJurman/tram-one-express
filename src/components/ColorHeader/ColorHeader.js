@@ -16,7 +16,7 @@ export default () => {
       style="color:${colors[colorIndex]}"
       onclick=${updateOnTitleClick}
     >
-      %TITLE%
+      tram-one-example
     </h1>
   `
 }
