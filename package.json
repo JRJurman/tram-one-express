@@ -1,0 +1,44 @@
+{
+  "name": "tram-one-express",
+  "version": "15.2.0",
+  "description": "Generator to build Tram-One applications quickly",
+  "bin": "./generator.js",
+  "files": [
+    "template",
+    "generator.js"
+  ],
+  "main": "generator.js",
+  "keywords": [
+    "tram-one",
+    "generator"
+  ],
+  "scripts": {
+    "lint": "xo generator.js",
+    "generate-example": "npm run example-generate",
+    "example-generate": "rm -rf tram-one-example && node generator.js tram-one-example",
+    "example-build": "cd ./tram-one-example && npm run build",
+    "example-test": "cd ./tram-one-example && npm test",
+    "ci-run": "node tests/circleci-run.js"
+  },
+  "author": "Jesse Jurman",
+  "repository": "https://github.com/jrjurman/tram-one-express",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^4.0.2"
+  },
+  "devDependencies": {
+    "eslint-config-tram-one": "^1.1.0",
+    "jasmine": "^3.1.0",
+    "nightmare": "^3.0.1",
+    "node-fetch": "^2.1.2",
+    "require-yml": "^1.3.1",
+    "superstatic": "^6.0.4",
+    "testem": "^2.14.0",
+    "xo": "^0.23.0"
+  },
+  "xo": {
+    "extends": [
+      "tram-one"
+    ]
+  }
+}
