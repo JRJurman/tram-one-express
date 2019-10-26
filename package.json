@@ -2,32 +2,43 @@
   "name": "tram-one-example",
   "version": "1.0.0",
   "scripts": {
-    "start": "parcel src/index.html --open",
-    "build": "parcel build src/index.html",
-    "test": "jest src --watch"
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html",
+    "test": "jest src --watch",
+    "lint": "xo"
   },
   "dependencies": {
-    "@babel/core": "7.2.0",
-    "@babel/preset-env": "^7.4.5",
-    "babel-jest": "^24.8.0",
-    "babel-polyfill": "6.26.0",
+    "core-js": "^3.3.1",
     "jest": "^24.8.0",
     "jest-transform-stub": "^2.0.0",
     "parcel-bundler": "^1.6.1",
+    "regenerator-runtime": "^0.13.3",
     "sass": "^1.20.1",
     "tram-blueprints": "^1.0.0",
-    "tram-one": "^8.1.1"
+    "tram-one": "^8.1.1",
+    "xo": "^0.23.0"
   },
   "keywords": [
     "tram-one"
   ],
   "babel": {
-    "presets": ["@babel/preset-env"]
+    "presets": [
+      "@babel/preset-env"
+    ]
   },
   "jest": {
     "transform": {
       ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub",
       "^.+\\.js$": "babel-jest"
     }
+  },
+  "devDependencies": {
+    "eslint-config-tram-one": "^3.0.0",
+    "parcel-plugin-nuke-dist": "^1.0.0"
+  },
+  "xo": {
+    "extends": [
+      "tram-one"
+    ]
   }
 }

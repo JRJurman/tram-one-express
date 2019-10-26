@@ -1,14 +1,15 @@
-import "babel-polyfill";
-import { registerHtml, start } from "tram-one"
-import ColorHeader from "./components/ColorHeader"
-import "./styles.css"
+import 'core-js/stable'
+import 'regenerator-runtime/runtime'
+import {registerHtml, start} from 'tram-one'
+import ColorHeader from './components/ColorHeader'
+import './styles.css'
 
 const html = registerHtml({
-  ColorHeader
+	ColorHeader
 })
 
 const home = () => {
-  return html`
+	return html`
     <div>
       <ColorHeader />
       Thank you for using Tram-One!
@@ -16,4 +17,4 @@ const home = () => {
   `
 }
 
-start("#app", home)
+start('#app', home)
