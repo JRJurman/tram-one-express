@@ -9,9 +9,11 @@
   },
   "dependencies": {
     "core-js": "^3.3.1",
+    "eslint-config-tram-one": "^4.0.0",
     "jest": "^24.8.0",
     "jest-transform-stub": "^2.0.0",
     "parcel-bundler": "^1.6.1",
+    "parcel-plugin-nuke-dist": "^1.0.0",
     "regenerator-runtime": "^0.13.3",
     "sass": "^1.20.1",
     "tram-blueprints": "^1.0.0",
@@ -31,10 +33,6 @@
       ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub",
       "^.+\\.js$": "babel-jest"
     }
-  },
-  "devDependencies": {
-    "eslint-config-tram-one": "^3.0.0",
-    "parcel-plugin-nuke-dist": "^1.0.0"
   },
   "xo": {
     "extends": [

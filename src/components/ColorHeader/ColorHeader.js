@@ -1,21 +1,17 @@
-import {registerHtml, useState} from 'tram-one'
+import { registerHtml } from 'tram-one'
 import './ColorHeader.scss'
+import useColor from '../../hooks/useColor'
 
 const html = registerHtml()
 
 export default () => {
-	const colors = ['#e6ef9f', '#a09fef', '#9fefa1', '#ef9f9f']
-	const [colorIndex, setColorIndex] = useState(0)
-
-	const updateOnTitleClick = () => {
-		setColorIndex((colorIndex + 1) % colors.length)
-	}
+	const [color, incrementColor] = useColor()
 
 	return html`
     <h1
       class="color-header"
-      style="color:${colors[colorIndex]}"
-      onclick=${updateOnTitleClick}
+      style="color:${color}"
+      onclick=${incrementColor}
     >
       tram-one-example
     </h1>

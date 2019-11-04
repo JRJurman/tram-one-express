@@ -1,1 +1,1 @@
-export {default} from './ColorHeader'
+export { default } from './ColorHeader'

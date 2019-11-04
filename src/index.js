@@ -1,18 +1,20 @@
 import 'core-js/stable'
 import 'regenerator-runtime/runtime'
-import {registerHtml, start} from 'tram-one'
+import { registerHtml, start } from 'tram-one'
 import ColorHeader from './components/ColorHeader'
 import './styles.css'
+import useColor from './hooks/useColor'
 
 const html = registerHtml({
 	ColorHeader
 })
 
 const home = () => {
+	const [color] = useColor()
 	return html`
     <div>
       <ColorHeader />
-      Thank you for using Tram-One!
+      <div style="color:${color}"> Thank you for using Tram-One! </div>
     </div>
   `
 }

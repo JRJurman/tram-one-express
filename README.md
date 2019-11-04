@@ -14,3 +14,4 @@ and will watch for changes
 [Parcel](https://parceljs.org/)
 - `npm test` - runs tests in
 [Jest](https://jestjs.io/)
+- `npm run lint` - runs linting on the project based on [xo](https://github.com/xojs/xo) and the [tram-one-eslint-config](https://github.com/Tram-One/eslint-config-tram-one)
