@@ -11,6 +11,7 @@ export default () => {
     <h1
       class="color-header"
       style="color:${color}"
+			role="heading"
       onclick=${incrementColor}
     >
       tram-one-example

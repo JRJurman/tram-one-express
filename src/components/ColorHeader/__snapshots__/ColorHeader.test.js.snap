@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`ColorHeader should match snapshot 1`] = `
-"<h1 style=\\"color:#e6ef9f\\" class=\\"color-header\\">
-      tram-one-example
-    </h1>"
-`;
