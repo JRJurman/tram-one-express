@@ -31,12 +31,6 @@
       "@babel/preset-env"
     ]
   },
-  "jest": {
-    "transform": {
-      ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub",
-      "^.+\\.js$": "babel-jest"
-    }
-  },
   "xo": {
     "extends": [
       "tram-one"
